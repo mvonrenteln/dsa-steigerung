@@ -1,7 +1,13 @@
 package dsa
 
-class Kampagne {
+import java.util.SortedSet;
 
-    static constraints = {
-    }
+class Kampagne {
+	
+	String titel
+	
+	List abenteuer
+	
+	static hasMany = [abenteuer:Abenteuer]
+
 }

@@ -1,6 +1,6 @@
 package dsa
 
-class Zauber {
+class Zauber extends Charakteristik {
 
     static constraints = {
     }

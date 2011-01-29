@@ -1,7 +1,13 @@
 package dsa
 
-class Abenteuer {
+import java.util.SortedSet;
 
-    static constraints = {
-    }
+class Abenteuer extends Spieleinheit {
+	
+	List kapitel
+	
+	SortedSet abende
+	
+	static hasMany = [kapitel:Kapitel, abende:Spielabend]
+
 }

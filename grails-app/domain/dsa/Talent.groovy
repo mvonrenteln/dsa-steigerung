@@ -1,6 +1,6 @@
 package dsa
 
-class Talent {
+class Talent extends Charakteristik {
 
     static constraints = {
     }
