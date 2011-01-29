@@ -1,6 +1,6 @@
 package dsa
 
-class Eigenschaft {
+class Eigenschaft extends Charakteristik {
 
     static constraints = {
     }

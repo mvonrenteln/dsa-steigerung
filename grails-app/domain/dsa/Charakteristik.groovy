@@ -1,6 +1,6 @@
 package dsa
 
-abstract class Charakteristik {
+class Charakteristik {
 
 	String name
 	
