@@ -1,7 +1,9 @@
 package dsa.held
 
 
-class TalentGruppe {
+enum TalentGruppe {
+	
+	KAMPF, KOERPER, GESELLSCHAFT, NATUR, WISSEN, SPRACHEN, SCHRIFTEN, HANDWERK, GABEN, RITUALKENNTNIS
 
     static constraints = {
     }
