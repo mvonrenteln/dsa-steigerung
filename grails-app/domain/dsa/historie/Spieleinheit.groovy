@@ -2,7 +2,7 @@ package dsa.historie
 
 
 
-abstract class Spieleinheit {
+class Spieleinheit {
 	
 	String titel
 	

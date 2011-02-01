@@ -9,6 +9,8 @@ class Talent extends Charakteristik {
 	}
 	
 	Typ typ
+	
+	TalentGruppe talentGruppe
 
     static constraints = {
     }

@@ -19,10 +19,6 @@ class Steigerung {
 	static belongsTo = [ held: Held ]
 	
 	
-	int getKosten() {
-		
-	}
-	
     static constraints = {
 		von(min:-7,max:30)
 		nach(min:0,max:31)
