@@ -39,6 +39,24 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="kosten"><g:message code="talent.kosten.label" default="Kosten" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: talentInstance, field: 'kosten', 'errors')}">
+                                    <g:select name="kosten" from="${dsa.steigerung.SKT?.values()}" keys="${dsa.steigerung.SKT?.values()*.name()}" value="${talentInstance?.kosten?.name()}" noSelection="['': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="quelle"><g:message code="talent.quelle.label" default="Quelle" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: talentInstance, field: 'quelle', 'errors')}">
+                                    <g:select name="quelle" from="${dsa.Quelle?.values()}" keys="${dsa.Quelle?.values()*.name()}" value="${talentInstance?.quelle?.name()}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="talentGruppe"><g:message code="talent.talentGruppe.label" default="Talent Gruppe" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: talentInstance, field: 'talentGruppe', 'errors')}">

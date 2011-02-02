@@ -37,6 +37,20 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="talent.kosten.label" default="Kosten" /></td>
+                            
+                            <td valign="top" class="value">${talentInstance?.kosten?.encodeAsHTML()}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="talent.quelle.label" default="Quelle" /></td>
+                            
+                            <td valign="top" class="value">${talentInstance?.quelle?.encodeAsHTML()}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="talent.talentGruppe.label" default="Talent Gruppe" /></td>
                             
                             <td valign="top" class="value">${talentInstance?.talentGruppe?.encodeAsHTML()}</td>

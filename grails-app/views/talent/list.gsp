@@ -26,6 +26,10 @@
                         
                             <g:sortableColumn property="name" title="${message(code: 'talent.name.label', default: 'Name')}" />
                         
+                            <g:sortableColumn property="kosten" title="${message(code: 'talent.kosten.label', default: 'Kosten')}" />
+                        
+                            <g:sortableColumn property="quelle" title="${message(code: 'talent.quelle.label', default: 'Quelle')}" />
+                        
                             <g:sortableColumn property="talentGruppe" title="${message(code: 'talent.talentGruppe.label', default: 'Talent Gruppe')}" />
                         
                             <g:sortableColumn property="typ" title="${message(code: 'talent.typ.label', default: 'Typ')}" />
@@ -39,6 +43,10 @@
                             <td><g:link action="show" id="${talentInstance.id}">${fieldValue(bean: talentInstance, field: "id")}</g:link></td>
                         
                             <td>${fieldValue(bean: talentInstance, field: "name")}</td>
+                        
+                            <td>${fieldValue(bean: talentInstance, field: "kosten")}</td>
+                        
+                            <td>${fieldValue(bean: talentInstance, field: "quelle")}</td>
                         
                             <td>${fieldValue(bean: talentInstance, field: "talentGruppe")}</td>
                         
