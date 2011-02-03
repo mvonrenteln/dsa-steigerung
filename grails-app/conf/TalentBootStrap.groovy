@@ -1,4 +1,6 @@
 import dsa.Quelle
+import dsa.Regeln;
+import dsa.held.Charakteristik;
 import dsa.held.Schrift
 import dsa.held.Sprache
 import dsa.held.Talent
@@ -18,7 +20,13 @@ class TalentBootStrap {
 
 			createTalent("Armbrust", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
 
+			dsa4_1(createTalent("Belagerungswaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
+
+			dsa4_1(createTalent("Blasrohr", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
+
 			createTalent("Bogen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+
+			dsa4_1(createTalent("Diskus", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
 
 			createTalent("Dolche", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
 
@@ -28,15 +36,21 @@ class TalentBootStrap {
 
 			createTalent("Infanteriewaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL,  SKT.D)
 
+			dsa4_1(createTalent("Kettenstäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
+
 			createTalent("Kettenwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
 			createTalent("Lanzenreiten", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+
+			dsa4_1(createTalent("Peitsche", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
 
 			createTalent("Raufen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.C)
 
 			createTalent("Ringen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
 
 			createTalent("Säbel", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+
+			dsa4_1(createTalent("Schleuder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C))
 
 			createTalent("Schwerter", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
@@ -50,9 +64,9 @@ class TalentBootStrap {
 
 			createTalent("Wurfspeere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
 
-			createTalent("ZweihandHiebwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Zweihand-Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
-			createTalent("Zweihandschwerter", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Zweihandschwerter/-säbel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
 			/*
 			 * KOERPERLICHE TALENTE
@@ -61,11 +75,13 @@ class TalentBootStrap {
 
 			createTalent("Athletik", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
+			dsa4_1(createTalent("Fliegen", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL))
+
 			createTalent("Gaukeleien", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
 
 			createTalent("Klettern", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("Koerperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Körperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
 			createTalent("Reiten", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
 
@@ -75,13 +91,15 @@ class TalentBootStrap {
 
 			createTalent("Selbstbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("SichVerstecken", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Sich Verstecken", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
 			createTalent("Singen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("Sinnenschaerfe", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Sinnenschärfe", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("StimmenImitieren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Skifahren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL))
+
+			createTalent("Stimmen Imitieren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
 
 			createTalent("Tanzen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
@@ -92,9 +110,11 @@ class TalentBootStrap {
 			/*
 			 * GESELLSCHAFTLICHE TALENTE
 			 */
-			createTalent("Betoeren", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Betören", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
 			createTalent("Etikette", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+
+			dsa4(createTalent("Galanterie", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL))
 
 			createTalent("Gassenwissen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
@@ -102,24 +122,30 @@ class TalentBootStrap {
 
 			createTalent("Menschenkenntnis", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
 
-			createTalent("SichVerkleiden", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Schauspielerei", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL))
 
-			createTalent("Ueberreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
+			dsa4_1(createTalent("Schriftlicher Ausdruck", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL))
 
-			createTalent("Ueberzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Sich Verkleiden", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+
+			createTalent("Überreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
+
+			createTalent("Überzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
 			/*
 			 * NATUR-TALENTE
 			 */
-			createTalent("Faehrtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS)
+			createTalent("Fährtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS)
 
 			createTalent("Fallenstellen", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
 
-			createTalent("FesselnEntfesseln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Fesseln/Entfesseln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
 
-			createTalent("FischenAngeln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Fischen/Angeln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
 
 			createTalent("Orientierung", TalentGruppe.NATUR, Talent.Typ.BASIS)
+
+			dsa4_1(createTalent("Seefischerei", TalentGruppe.NATUR, Talent.Typ.SPEZIAL))
 
 			createTalent("Wettervorhersage", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
 
@@ -130,7 +156,9 @@ class TalentBootStrap {
 			 */
 			createTalent("Anatomie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
-			createTalent("BrettWuerfelspiele", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Baukunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL))
+
+			createTalent("Brettspiel", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
 			createTalent("Geographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
@@ -138,11 +166,15 @@ class TalentBootStrap {
 
 			createTalent("Gesteinskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
-			createTalent("GoetterKulte", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("Götter/Kulte", TalentGruppe.WISSEN, Talent.Typ.BASIS)
 
 			createTalent("Heraldik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
+			dsa4_1(createTalent("Hüttenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL))
+
 			createTalent("Kriegskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+
+			dsa4_1(createTalent("Kryptographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL))
 
 			createTalent("Magiekunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
@@ -150,13 +182,17 @@ class TalentBootStrap {
 
 			createTalent("Pflanzenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
+			dsa4_1(createTalent("Philosophie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL))
+
 			createTalent("Rechnen", TalentGruppe.WISSEN, Talent.Typ.BASIS)
 
 			createTalent("Rechtskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
-			createTalent("SagenLegenden", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("Sagen/Legenden", TalentGruppe.WISSEN, Talent.Typ.BASIS)
 
-			createTalent("Schaetzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Schätzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+
+			dsa4_1(createTalent("Schiffsbau", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL))
 
 			createTalent("Sprachenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
@@ -243,51 +279,95 @@ class TalentBootStrap {
 
 			createTalent("Bogenbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("BooteFahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Boote Fahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("FahrzeugLenken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Brauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Drucker", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Eissegler Fahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			createTalent("Fahrzeug Lenken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Falschspiel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Feinmechanik", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
+			dsa4_1(createTalent("Feuersteinbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
 			createTalent("Fleischer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("GerberKuerschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Gerber/Kürschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+
+			dsa4_1(createTalent("Glaskunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
 			createTalent("Grobschmied", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("HeilkundeGift", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Handel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
-			createTalent("HeilkundeKrankheiten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Hauswirtschaft", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
-			createTalent("HeilkundeSeele", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Heilkunde Gift", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("HeilkundeWunden", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Heilkunde Krankheiten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+
+			createTalent("Heilkunde Seele", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+
+			createTalent("Heilkunde Wunden", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
 
 			createTalent("Holzbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+
+			dsa4_1(createTalent("Hundeschlitten fahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Instrumentenbauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Kapellmeister", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
 			createTalent("Kartographie", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Kochen", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
 
+			dsa4_1(createTalent("Kristallzüchter", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
 			createTalent("Lederarbeiten", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
 
-			createTalent("MalenZeichnen", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Malen/Zeichnen", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+
+			dsa4_1(createTalent("Maurer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Metallguss", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
 			createTalent("Musizieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("SchloesserKnacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Schloesser Knacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+
+			dsa4_1(createTalent("Schnaps brennen", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
 			createTalent("Schneidern", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
 
 			createTalent("Seefahrt", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
+			dsa4_1(createTalent("Seiler", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
 			createTalent("Steinmetz", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Steinschneider", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Steinschneider/Juwelier", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Taetowieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			dsa4_1(createTalent("Stellmacher", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Steuermann", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Stoffe Färben", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			createTalent("Tätowieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+
+			dsa4_1(createTalent("Töpfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Viezucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Webkunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
+
+			dsa4_1(createTalent("Winzer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL))
 
 			createTalent("Zimmermann", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
@@ -309,29 +389,45 @@ class TalentBootStrap {
 		}
 	}
 
-	void createSprache(String name) {
-		createSprache name, null
+	Talent createSprache(String name) {
+		return createSprache(name, null)
 	}
 
-	void createSprache(String name, SKT kosten) {
-		new Sprache(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createSprache(String name, SKT kosten) {
+		return new Sprache(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
 	}
 
-	void createSchrift(String name) {
-		createSchrift name, null
+	Talent createSchrift(String name) {
+		return createSchrift (name, null)
 	}
 
-	void createSchrift(String name, SKT kosten) {
-		new Schrift(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createSchrift(String name, SKT kosten) {
+		return new Schrift(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
 	}
 
 
-	void createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ) {
-		createTalent name, talentGruppe, typ, null
+	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ) {
+		return createTalent (name, talentGruppe, typ, null)
 	}
 
-	void createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ, SKT kosten) {
-		new Talent(name: name, talentGruppe: talentGruppe, typ: typ, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ, SKT kosten) {
+		return new Talent(name: name, talentGruppe: talentGruppe, typ: typ, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	}
+
+	/**
+	 * Fügt die Charakteristik dem DSA 4-Regelsystem zu.
+	 * 
+	 */
+	void dsa4(Charakteristik charakteristik) {
+		Regeln.DSA4.addToCharakteristiken(charakteristik).save()
+	}
+
+	/**
+	 * Fügt die Charakteristik dem DSA 4.1-Regelsystem zu.
+	 *
+	 */
+	void dsa4_1(Charakteristik charakteristik) {
+		Regeln.DSA4_1.addToCharakteristiken(charakteristik).save()
 	}
 
 
