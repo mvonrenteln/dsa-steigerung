@@ -2,6 +2,7 @@ package dsa.held
 
 import dsa.Quelle;
 import dsa.steigerung.SKT;
+import dsa.util.EnumHelper;
 
 
 class Talent extends Charakteristik {
