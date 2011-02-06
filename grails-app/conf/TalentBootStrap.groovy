@@ -16,7 +16,7 @@ class TalentBootStrap {
 			/*
 			 * Kampf-TALENTE
 			 */
-			createTalent("Anderthalbhänder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Anderthalbh√§nder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
 			createTalent("Armbrust", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
 
@@ -36,7 +36,7 @@ class TalentBootStrap {
 
 			createTalent("Infanteriewaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL,  SKT.D)
 
-			createTalent("Kettenstäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Kettenst√§be", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
 			createTalent("Kettenwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
@@ -48,7 +48,7 @@ class TalentBootStrap {
 
 			createTalent("Ringen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
 
-			createTalent("Säbel", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+			createTalent("S√§bel", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
 
 			createTalent("Schleuder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
@@ -56,7 +56,7 @@ class TalentBootStrap {
 
 			createTalent("Speere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
-			createTalent("Stäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("St√§be", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
 			createTalent("Wurfbeile", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
 
@@ -69,7 +69,7 @@ class TalentBootStrap {
 			createTalent("Zweihand-Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
 
 
-			createTalent("Zweihandschwerter/-säbel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Zweihandschwerter/-s√§bel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
 
 			/*
 			 * KOERPERLICHE TALENTE
@@ -84,7 +84,7 @@ class TalentBootStrap {
 
 			createTalent("Klettern", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("Körperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("K√∂rperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
 			createTalent("Reiten", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
 
@@ -98,7 +98,7 @@ class TalentBootStrap {
 
 			createTalent("Singen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
-			createTalent("Sinnenschärfe", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Sinnensch√§rfe", TalentGruppe.KOERPER, Talent.Typ.BASIS)
 
 			createTalent("Skifahren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
 
@@ -113,7 +113,7 @@ class TalentBootStrap {
 			/*
 			 * GESELLSCHAFTLICHE TALENTE
 			 */
-			createTalent("Betören", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Bet√∂ren", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
 			createTalent("Etikette", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
@@ -129,14 +129,14 @@ class TalentBootStrap {
 
 			createTalent("Sich Verkleiden", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
-			createTalent("Überreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
+			createTalent("√úberreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
 
-			createTalent("Überzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("√úberzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
 
 			/*
 			 * NATUR-TALENTE
 			 */
-			createTalent("Fährtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS)
+			createTalent("F√§hrtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS)
 
 			createTalent("Fallenstellen", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
 
@@ -165,11 +165,11 @@ class TalentBootStrap {
 
 			createTalent("Gesteinskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
-			createTalent("Götter/Kulte", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("G√∂tter/Kulte", TalentGruppe.WISSEN, Talent.Typ.BASIS)
 
 			createTalent("Heraldik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
-			createTalent("Hüttenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("H√ºttenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
 			createTalent("Kriegskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
@@ -189,7 +189,7 @@ class TalentBootStrap {
 
 			createTalent("Sagen/Legenden", TalentGruppe.WISSEN, Talent.Typ.BASIS)
 
-			createTalent("Schätzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Sch√§tzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
 			createTalent("Sprachenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
 
@@ -292,7 +292,7 @@ class TalentBootStrap {
 
 			createTalent("Fleischer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Gerber/Kürschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Gerber/K√ºrschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Glaskunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
@@ -346,11 +346,11 @@ class TalentBootStrap {
 
 			createTalent("Stellmacher", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Stoffe Färben", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Stoffe F√§rben", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Tätowieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("T√§towieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Töpfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("T√∂pfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Viezucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
@@ -365,7 +365,7 @@ class TalentBootStrap {
 			 */
 			createTalent("Gefahreninstinkt", TalentGruppe.GABEN, Talent.Typ.GABE)
 
-			createTalent("Magiegespuer", TalentGruppe.GABEN, Talent.Typ.GABE)
+			createTalent("Magiegesp√ºr", TalentGruppe.GABEN, Talent.Typ.GABE)
 
 			createTalent("Prophezeien", TalentGruppe.GABEN, Talent.Typ.GABE)
 
@@ -374,6 +374,7 @@ class TalentBootStrap {
 			/*
 			 * RITUALKENNTNIS
 			 */
+			// fremde Repr√§s., eigene Spalte D/E, fremde Spalte G, Kauf: 250
 			createTalent("Ritualkenntnis", TalentGruppe.RITUALKENNTNIS, Talent.Typ.RITUALKENNTNIS)
 		}
 	}
