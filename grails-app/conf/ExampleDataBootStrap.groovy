@@ -1,5 +1,6 @@
-class BootStrap {
 
+class ExampleDataBootStrap {
+	
 	def init = { servletContext ->
 		environments {
 			production {
@@ -10,6 +11,5 @@ class BootStrap {
 			}
 		}
 	}
-	def destroy = {
-	}
+	
 }
