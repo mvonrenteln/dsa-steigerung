@@ -146,80 +146,80 @@ class SonderfertigkeitBootStrap {
 			/**
 			 * Kampf (waffenlos)
 			 */
-			createSonderfertigkeit("Auspendeln",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Auspendeln",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Beinarbeit",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Beinarbeit",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Biss",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Biss",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Block",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Block",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Doppelschlag",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Doppelschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Eisenarm",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 60);
+			createSonderfertigkeit("Eisenarm",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
 
-			createSonderfertigkeit("Fußfeger",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Fußfeger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Gerade",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Gerade",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Griff",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Griff",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Halten",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Halten",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Handkante",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 60);
+			createSonderfertigkeit("Handkante",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
 
-			createSonderfertigkeit("Hoher Tritt",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Hoher Tritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Klammer",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Klammer",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Knaufschlag",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Knaufschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Knie",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Knie",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Kopfstoß",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Kopfstoß",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Kreuzblock",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Kreuzblock",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Niederringen",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Niederringen",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Schmetterschlag",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Schmetterschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Schmutzige Tricks",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 60);
+			createSonderfertigkeit("Schmutzige Tricks",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
 
-			createSonderfertigkeit("Schwanzfeger",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 20);
+			createSonderfertigkeit("Schwanzfeger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 20);
 
-			createSonderfertigkeit("Schwanzschlag",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 10);
+			createSonderfertigkeit("Schwanzschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 10);
 
-			createSonderfertigkeit("Schwinger",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Schwinger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Schwitzkasten",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 20);
+			createSonderfertigkeit("Schwitzkasten",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 20);
 
-			createSonderfertigkeit("Sprung",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Sprung",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Sprungtritt",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Sprungtritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Tritt",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Tritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
-			createSonderfertigkeit("Versteckte Klinge",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 50);
+			createSonderfertigkeit("Versteckte Klinge",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
 
-			createSonderfertigkeit("Wurf",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 40);
+			createSonderfertigkeit("Wurf",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
 
-			createSonderfertigkeit("Würgegriff",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 30);
+			createSonderfertigkeit("Würgegriff",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
 
 			/**
 			 * Kampftechniken (waffenlos)
 			 */
-			createSonderfertigkeit("Bornländisch",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 100);
+			createSonderfertigkeit("Bornländisch",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 100);
 
-			createSonderfertigkeit("Gladiatorenstil",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 150);
+			createSonderfertigkeit("Gladiatorenstil",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
 
-			createSonderfertigkeit("Hammerfaust",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 150);
+			createSonderfertigkeit("Hammerfaust",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
 
-			createSonderfertigkeit("Hruruzat",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 200);
+			createSonderfertigkeit("Hruruzat",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 200);
 
-			createSonderfertigkeit("Mercenario",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 200);
+			createSonderfertigkeit("Mercenario",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 200);
 
-			createSonderfertigkeit("Unauer Schule",Sonderfertigkeit.Typ.KAMPF_WAFFENLOS, 150);
+			createSonderfertigkeit("Unauer Schule",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
 
 			/**
 			 * Magische
@@ -313,9 +313,6 @@ class SonderfertigkeitBootStrap {
 
 			createSonderfertigkeit("Repräsentation",Sonderfertigkeit.Typ.MAGISCH, 2000);
 
-			// fremde Repräs., eigene Spalte D/E, fremde Spalte G, eigl. Talent?
-			createSonderfertigkeit("Ritualkenntnis",Sonderfertigkeit.Typ.MAGISCH, 250);
-
 			createSonderfertigkeit("Runenkunde",Sonderfertigkeit.Typ.MAGISCH, 200);
 
 			// fremde Sippe, eigene 0 AP
@@ -392,58 +389,60 @@ class SonderfertigkeitBootStrap {
 			/**
 			 * Allgemein			
 			 */
-			createSonderfertigkeit("Akklimatisierung Hitze",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Akklimatisierung Hitze",Sonderfertigkeit.Typ.ALLGEMEIN, 150);
 
-			createSonderfertigkeit("Akklimatisierung Kälte",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Akklimatisierung Kälte",Sonderfertigkeit.Typ.ALLGEMEIN, 150);
 
-			createSonderfertigkeit("Aurapanzer",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Aurapanzer",Sonderfertigkeit.Typ.ALLGEMEIN, 500);
 
-			createSonderfertigkeit("Berufsgeheimnis",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Berufsgeheimnis",Sonderfertigkeit.Typ.ALLGEMEIN, 100);
 
-			createSonderfertigkeit("Eiserner Wille I",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Eiserner Wille I",Sonderfertigkeit.Typ.ALLGEMEIN, 200);
 
-			createSonderfertigkeit("Eiserner Wille II",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Eiserner Wille II",Sonderfertigkeit.Typ.ALLGEMEIN, 300);
 
-			createSonderfertigkeit("Fälscher",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Fälscher",Sonderfertigkeit.Typ.ALLGEMEIN, 100);
 
-			createSonderfertigkeit("Gedankenschutz",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Gedankenschutz",Sonderfertigkeit.Typ.ALLGEMEIN, 250);
 
-			createSonderfertigkeit("Kulturkunde",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Kulturkunde",Sonderfertigkeit.Typ.ALLGEMEIN, 150);
 
-			createSonderfertigkeit("Meister der Improvisation",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Meister der Improvisation",Sonderfertigkeit.Typ.ALLGEMEIN, 200);
 
-			createSonderfertigkeit("Nandusgefälliges Wissen",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Nandusgefälliges Wissen",Sonderfertigkeit.Typ.ALLGEMEIN, 200);
 
-			createSonderfertigkeit("Ortskenntnis",Sonderfertigkeit.Typ.ALLGEMEIN);
+			// 150 für Erste, 100 für alle Weiteren
+			createSonderfertigkeit("Ortskenntnis",Sonderfertigkeit.Typ.ALLGEMEIN, 150);
 
-			createSonderfertigkeit("Rosstäuscher",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Rosstäuscher",Sonderfertigkeit.Typ.ALLGEMEIN, 100);
 
-			createSonderfertigkeit("Standfest",Sonderfertigkeit.Typ.ALLGEMEIN);
+			createSonderfertigkeit("Standfest",Sonderfertigkeit.Typ.ALLGEMEIN, 200);
 
 			createSonderfertigkeit("Talentspezialisierung",Sonderfertigkeit.Typ.ALLGEMEIN);
 
 			/**
 			 * Geländekunde
 			 */
-			createSonderfertigkeit("Dschungelkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			// 150 für das Erste, 100 für alle Weiteren
+			createSonderfertigkeit("Dschungelkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Eiskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Eiskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Gebirgskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Gebirgskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Höhlenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Höhlenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Maraskankundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Maraskankundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Meereskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Meereskundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Steppenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Steppenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Sumpfkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Sumpfkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Waldkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Waldkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 
-			createSonderfertigkeit("Wüstenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE);
+			createSonderfertigkeit("Wüstenkundig",Sonderfertigkeit.Typ.GELAENDEKUNDE, 150);
 		}
 	}
 
