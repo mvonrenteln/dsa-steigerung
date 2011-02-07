@@ -1,8 +1,8 @@
 /**
- *  DSA-Steigerung an inofficial fan project based on content of the  
- *  german roleplaying game Das Schwarze Auge ® (DSA) (The Black Eye) 
+ *  DSA-Steigerung an inofficial fan project based on content of the
+ *  german roleplaying game Das Schwarze Auge ® (DSA) (The Black Eye)
  *  owned by Ulisses Medien & Spiel Distribution GmbH.
- *  
+ *
  *  Copyright (C) 2011  Marc von Renteln (Code)
  *  Copyright (C) 2007  Ulisses Medien & Spiel Distribution GmbH (Rules)
  *
@@ -19,11 +19,19 @@
  *  You should have received a copy of the GNU Affero General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dsa.held
 
+class ZauberBootStrap {
 
-class GeistigeEigenschaften {
-
-	static constraints = {
+	def init = { servletContext ->
+		environments {
+			production {
+				servletContext.setAttribute("env", "prod")
+			}
+			development {
+				servletContext.setAttribute("env", "dev")
+			}
+		}
+	}
+	def destroy = {
 	}
 }
