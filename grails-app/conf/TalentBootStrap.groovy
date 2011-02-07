@@ -202,66 +202,133 @@ class TalentBootStrap {
 			/*
 			 * SPRACHEN
 			 */
-			createSprache("Alaani")
+			createSprache("Alaani", 21)
 
-			createSprache("Asdharia", SKT.B);
+			createSprache("Altes Kemi", 18)
 
-			createSprache("Atak")
+			createSprache("Angram", 21);
 
-			createSprache("Bosparano")
+			createSprache("Asdharia", 24, SKT.B);
 
-			createSprache("Fuechsisch")
+			createSprache("Atak", 12)
 
-			createSprache("Garethi")
+			createSprache("Aureliani", 21)
 
-			createSprache("Goblinisch")
+			createSprache("Bosparano", 21)
 
-			createSprache("Isdira")
+			createSprache("Drachisch", 21) // nur unter Magie-Einsatz
 
-			createSprache("Mohisch")
+			createSprache("Ferkina", 16)
 
-			createSprache("Nujuka")
+			createSprache("Füchsisch", 12)
 
-			createSprache("Oloarkh")
+			createSprache("Garethi", 18)
 
-			createSprache("Ologhaijan")
+			createSprache("Goblinisch", 12)
 
-			createSprache("Rogolan")
+			createSprache("Grolmisch", 17)
 
-			createSprache("Rssahh")
+			createSprache("Hjaldingsch", 18)
 
-			createSprache("Thorwalsch")
+			createSprache("Isdira", 21)
 
-			createSprache("Tulamidya")
+			createSprache("Koboldisch", 15) // nur unter Magie-Einsatz
 
-			createSprache("UrTulamidya")
+			createSprache("Mahrisch", 20)
 
-			createSprache("Zhayad")
+			// Zusammenfassung von Waldmenschen-Sprachen (Tocamuyac, Puka-Puka)
+			createSprache("Mohisch", 15)
+
+			createSprache("Molochisch", 17)
+
+			createSprache("Neckergesang", 24) // nur unter Magie-Einsatz
+
+			createSprache("Nujuka", 15)
+
+			createSprache("Oloarkh", 10)
+
+			createSprache("Ologhaijan", 15)
+
+			createSprache("Rabensprache", 15)
+
+			createSprache("Rissoal", 20)
+
+			createSprache("Rogolan", 21)
+
+			createSprache("Rssahh", 18)
+
+			createSprache("Ruuz", 18)
+
+			createSprache("Thorwalsch", 18)
+
+			createSprache("Trollisch", 15)
+
+			createSprache("Tulamidya", 18)
+
+			createSprache("UrTulamidya", 21)
+
+			createSprache("Z'Lit", 17)
+
+			createSprache("Zelemja", 18)
+
+			createSprache("Zhayad", 15)
+
+			createSprache("Zhulchammaqra", 15)
+
+			createSprache("Zyklopäisch", 18)
 
 			/*
 			 *  SCHRIFTEN
 			 */
-			createSchrift("AsdhariaSchrift")
+			createSchrift("Altes Alaani", 18)
 
-			createSchrift("Chrmk", SKT.B);
+			createSchrift("Altes Kemi Schrift", 21)
 
-			createSchrift("GlyphenVonUnau")
+			createSchrift("Amulashtra modern", 11)
 
-			createSchrift("HjaldingscheRunen")
+			createSchrift("Amulashtra historisch", 17)
 
-			createSchrift("IsdiraSchrift")
+			createSchrift("Angram-Glyphen", 21)
 
-			createSchrift("KuslikerZeichen")
+			createSchrift("Arkanil", 24, SKT.C) //Rohalsschrift
 
-			createSchrift("Nanduria")
+			createSchrift("Chrmk", 18); //Zelemja
 
-			createSchrift("RogolanSchrift")
+			createSchrift("Chuchas", 18, SKT.B); //Proto-Zelemja, Yash-Hualay-Glyphen
 
-			createSchrift("TulamidyaSchrift")
+			createSchrift("Drakhard-Glyphen", 9)
 
-			createSchrift("UrTulamidyaSchrift")
+			createSchrift("Drakned-Glyphen", 15, SKT.B)
 
-			createSchrift("ZhayadSchrift")
+			createSchrift("Geheiligte Glyphen von Unau", 13)
+
+			createSchrift("Gimaril", 10)
+
+			createSchrift("Gjalskische Runen", 14)
+
+			createSchrift("Hjaldingsche Runen", 10)
+
+			createSchrift("Imperiale Zeichen", 12) //Alt-Güldenländisch
+
+			createSchrift("Isdira Lautschrift", 15)
+
+			createSchrift("Asdharia Lautschrift", 18)
+
+			createSchrift("Kusliker Zeichen", 10)
+
+			createSchrift("Mahrische Glyphen", 15, SKT.B)
+
+			createSchrift("Nanduria", 10)
+
+			createSchrift("Rogolan-Runen", 11)
+
+			createSchrift("Trollische Raumbilderschrift", 24, SKT.C)
+
+			createSchrift("Tulamidya Silbenzeichen", 14)
+
+			createSchrift("Ur-Tulamidya Silbenzeichen", 16)
+
+			createSchrift("Zhayad Schrift", 18)
 
 			/*
 			 * HANDWERKS-TALENTE
@@ -330,7 +397,7 @@ class TalentBootStrap {
 
 			createTalent("Musizieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Schloesser Knacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Schlösser Knacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Schnaps brennen", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
@@ -379,20 +446,20 @@ class TalentBootStrap {
 		}
 	}
 
-	Talent createSprache(String name) {
-		return createSprache(name, null)
+	Talent createSprache(String name, int komplexitaet) {
+		return createSprache(name, komplexitaet, null)
 	}
 
-	Talent createSprache(String name, SKT kosten) {
-		return new Sprache(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createSprache(String name, int komplexitaet, SKT kosten) {
+		return new Sprache(name: name, komplexitaet: komplexitaet, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
 	}
 
-	Talent createSchrift(String name) {
-		return createSchrift (name, null)
+	Talent createSchrift(String name, int komplexitaet) {
+		return createSchrift (name, komplexitaet, null)
 	}
 
-	Talent createSchrift(String name, SKT kosten) {
-		return new Schrift(name: name, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createSchrift(String name, int komplexitaet, SKT kosten) {
+		return new Schrift(name: name, komplexitaet: komplexitaet, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
 	}
 
 
