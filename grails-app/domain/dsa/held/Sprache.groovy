@@ -5,7 +5,7 @@ import java.util.HashSet;
 class Sprache extends Talent {
 
 	/**
-	 *  Die Komplexität bis zu der die Sprache gesteigert werden kann.
+	 *  Die Komplexit√§t bis zu der die Sprache gesteigert werden kann.
 	 */
 	int komplexitaet;
 
@@ -22,7 +22,7 @@ class Sprache extends Talent {
 	}
 
 	static constraints = {
-		komplexitaet(min:0,max:21)
+		komplexitaet(min:0,max:30)
 		sprachfamilie(nullable:true)
 	}
 }
