@@ -6,7 +6,7 @@ class Schrift extends Talent {
 	 * Die Komplexitaet ist die Hoechststufe auf die die Schrift
 	 * gesteigert werden kann.
 	 */
-	private int komplexitaet;
+	int komplexitaet;
 
 	Schrift() {
 		talentGruppe = TalentGruppe.SCHRIFTEN
