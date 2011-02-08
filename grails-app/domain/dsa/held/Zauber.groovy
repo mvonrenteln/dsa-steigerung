@@ -21,9 +21,17 @@
  */
 package dsa.held
 
+import dsa.steigerung.SKT
+
 
 
 class Zauber extends Charakteristik {
+
+	List merkmale
+
+	SKT kosten
+
+	static hasMany = [merkmale:Merkmal]
 
 	static constraints = {
 	}
