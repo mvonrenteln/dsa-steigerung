@@ -25,17 +25,28 @@ package dsa.held
 
 class Eigenschaft extends Charakteristik {
 
-	public static final Eigenschaft MU = new Eigenschaft(kuerzel: "MU", name: "Mut")
-	public static final Eigenschaft KL = new Eigenschaft(kuerzel: "KL", name: "Klugheit")
-	public static final Eigenschaft IN = new Eigenschaft(kuerzel: "IN", name: "Intuition")
-	public static final Eigenschaft CH = new Eigenschaft(kuerzel: "CH", name: "Charisma")
-	public static final Eigenschaft FF = new Eigenschaft(kuerzel: "FF", name: "Fingerfertigkeit")
-	public static final Eigenschaft GE = new Eigenschaft(kuerzel: "GE", name: "Gewandtheit")
-	public static final Eigenschaft KO = new Eigenschaft(kuerzel: "KO", name: "Konstitution")
-	public static final Eigenschaft KK = new Eigenschaft(kuerzel: "KK", name: "Körperkraft")
+	enum Instanz {
+		MU, KL, IN, CH, FF, GE, KO, KK
+	}
+
 
 	String kuerzel
 
+	static Eigenschaft getAt(Instanz instanz) {
+		return Eigenschaft.findByKuerzel(instanz.name())
+	}
+
 	static constraints = {
+		kuerzel(nullable:false, blank:false, maxLength:2,
+				inList:[
+					"MU",
+					"KL",
+					"IN",
+					"CH",
+					"FF",
+					"GE",
+					"KO",
+					"KK"
+				])
 	}
 }

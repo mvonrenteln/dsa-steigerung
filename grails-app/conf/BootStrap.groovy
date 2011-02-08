@@ -1,3 +1,6 @@
+import dsa.Quelle
+import dsa.held.Eigenschaft
+
 /**
  *  DSA-Steigerung an inofficial fan project based on content of the
  *  german roleplaying game Das Schwarze Auge ® (DSA) (The Black Eye)
@@ -23,6 +26,18 @@
 class BootStrap {
 
 	def init = { servletContext ->
+
+		if (!Eigenschaft.count()) {
+			new Eigenschaft(kuerzel: "MU", name: "Mut", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "KL", name: "Klugheit", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "IN", name: "Intuition", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "CH", name: "Charisma", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "FF", name: "Fingerfertigkeit", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "GE", name: "Gewandtheit", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "KO", name: "Konstitution", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+			new Eigenschaft(kuerzel: "KK", name: "Körperkraft", quelle: Quelle.OFFIZIELL).save(failOnError: true);
+		}
+
 		environments {
 			production {
 				servletContext.setAttribute("env", "prod")
