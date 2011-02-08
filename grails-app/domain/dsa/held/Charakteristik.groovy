@@ -21,6 +21,8 @@
  */
 package dsa.held
 
+import dsa.Quelle;
+
 
 class Charakteristik {
 
@@ -28,9 +30,12 @@ class Charakteristik {
 
 	String beschreibung
 
+	Quelle quelle
+
 	static constraints = {
 		name(unique:true, nullable:false, blank:false, maxLength:30)
 		beschreibung(nullable:true, maxLength:255)
+		quelle(nullable:false)
 	}
 
 	static mapping = { tablePerHierarchy false }

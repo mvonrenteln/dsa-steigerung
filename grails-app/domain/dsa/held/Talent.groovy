@@ -46,8 +46,6 @@ class Talent extends Charakteristik {
 
 	TalentGruppe talentGruppe
 
-	Quelle quelle
-
 	SKT kosten
 
 	SKT getKosten() {
@@ -57,7 +55,6 @@ class Talent extends Charakteristik {
 	static constraints = {
 		typ(nullable:false)
 		talentGruppe(nullable:false)
-		quelle(nullable:false)
 		kosten(nullable:true)
 	}
 }
