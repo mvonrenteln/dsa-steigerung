@@ -49,7 +49,7 @@ class Talent extends Charakteristik {
 	SKT kosten
 
 	SKT getKosten() {
-		return kosten ?: talentGruppe?.kosten
+		return kosten ?: talentGruppe.kosten
 	}
 
 	static constraints = {
