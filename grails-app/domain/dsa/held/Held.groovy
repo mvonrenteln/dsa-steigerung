@@ -28,10 +28,26 @@ class Held {
 
 	String name
 
+	String titel
+
+	String augenfarbe
+
+	String haarfarbe
+
+	String herkunft
+
+	String vorgeschichte
+
 	List steigerungen
 
 	static hasMany = [steigerungen : Steigerung]
 
 	static constraints = {
+		name(nullable:false, blank:false, maxLength:50)
+		titel(nullable:true, maxLength:50)
+		augenfarbe(nullable:true, maxLength:15)
+		haarfarbe(nullable:true, maxLength:15)
+		herkunft(nullable:true, maxLength:50)
+		vorgeschichte(nullable:true, maxLength:256000)
 	}
 }
