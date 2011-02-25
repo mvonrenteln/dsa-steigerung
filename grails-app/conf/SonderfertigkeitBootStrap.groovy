@@ -319,7 +319,6 @@ class SonderfertigkeitBootStrap {
 			createSonderfertigkeit("Meisterliche Zauberkontrolle II",Sonderfertigkeit.Typ.MAGISCH, 300);
 
 			for (merkmal in Merkmal) {
-				println merkmal.name+": "+merkmal.kosten+"/"+merkmal.getKosten()
 				createSonderfertigkeit("Merkmalskenntnis $merkmal.name",Sonderfertigkeit.Typ.MERKMALSKENNTNIS, merkmal.kosten);
 			}
 
