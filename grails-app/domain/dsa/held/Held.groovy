@@ -26,9 +26,27 @@ import dsa.steigerung.Steigerung;
 
 class Held {
 
+	enum Geschlecht {
+		maennlich, weiblich
+	}
+	
+	enum Stand {
+		ledig, verheiratet, verwitwet
+	}
+	
 	String name
 
+	Geschlecht geschlecht
+	
+	String geburtstag
+	
+	int groesse
+	
+	int gewicht
+
 	String titel
+	
+	Stand stand
 
 	String augenfarbe
 
