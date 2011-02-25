@@ -21,27 +21,77 @@
  */
 package dsa.steigerung
 
+import dsa.held.Charakteristik;
 import dsa.held.Held;
 import dsa.historie.Spieleinheit;
 
-
+/**
+ * Eine Steigerung stellt die Änderung eines 
+ * Talent/Zauber/Eigenschafts-Wertes von einem bestimmten
+ * Wert auf einen neuen Wert dar oder den Zukauf einer Sonderfertigkeit
+ * 
+ * Steigerungen sind einem Helden zugeordnet und sortiert. Es lässt
+ * sich also auch später genau die Reihenfolge von Steigerungen
+ * nachvollziehen und ggf. nachrechnen.
+ * 
+ * Die Kosten einer Steigerung werden nicht dynamisch berechnet, sondern
+ * in der Steigerung gespeichert. Dies hat zwei Gründe: Erstens ist die
+ * Reihenfolge der Steigerungen ausschlaggebend, so sind z.B. die Kosten
+ * für eine Steigerung eines Zaubers teurer, bevor man sich ein passendes
+ * Merkmal geholt hat. Hierdurch werden die früheren Steigerungen nicht
+ * modifiziert. Deswegen müsste man für eine dynamiche Berechnung stets
+ * die gesamte Abfolge der Steigerungen analysieren. Zweitens soll den
+ * Spielern die Möglcihkeit gegeben werden, die Kosten anzupassen. Dies 
+ * trägt Hausregeln und Sonderabreden in Einzelfällen Rechnung.
+ * 
+ * @author marcvonrenteln
+ *
+ */
 class Steigerung {
 
-	Steigerbar steigerbar
+	/**
+	 * Charakterwert, der gesteigert wird.
+	 */
+	Charakteristik charakteristik
 
+	/**
+	 * Startwert der Steigerung (Kosten fallen also erstmals für 
+	 * von+1 an). 
+	 */
 	int von
 
+	/**
+	 * Wert, bis zu dem die Steigerung erfolgt ist.
+	 */
 	int nach
 
+	/**
+	 * Die Lernmethode mit der diese Steigerung erfolgt ist.
+	 */
 	Lernmethode lernmethode
 
+	/**
+	 * Die Gesamtkosten nach Berücksichtigung von Lernmethode und Ver-
+	 * günstigungen durch Sonderfähigkeiten und Vorteile des Helden.
+	 */
+	int kosten
+	
+	/**
+	 * Zeigt an, ob die automatische Berechnung vom Spieler händisch 
+	 * angepasst worden ist.
+	 */
+	boolean modifiziert = false
+
+	/**
+	 * Abenteuer/Spieleabend nach dem diese Steigerung vorgenommen wurde.
+	 */
 	Spieleinheit spieleeinheit
 
 	static belongsTo = [ held: Held ]
 
-
 	static constraints = {
 		von(min:-7,max:30)
 		nach(min:0,max:31)
+		spieleeinheit(nullable:true)
 	}
 }
