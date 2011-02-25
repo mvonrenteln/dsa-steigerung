@@ -23,6 +23,7 @@
 import dsa.Quelle
 import dsa.Regeln;
 import dsa.held.Charakteristik;
+import dsa.held.Merkmal;
 import dsa.held.Schrift
 import dsa.held.Sonderfertigkeit;
 import dsa.held.Sprache
@@ -39,223 +40,219 @@ class SonderfertigkeitBootStrap {
 			/**
 			 * Kampf
 			 */
-			createSonderfertigkeit("Aufmerksamkeit",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Aufmerksamkeit",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Ausfall",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Ausfall",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Ausweichen I",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Ausweichen I",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Ausweichen II",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Ausweichen II",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Ausweichen III",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Ausweichen III",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Befreiungsschlag",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Befreiungsschlag",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Beidhändiger Kampf I",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Beidhändiger Kampf I",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Beidhändiger Kampf II",Sonderfertigkeit.Typ.KAMPF, 400);
+			createSonderfertigkeit("Beidhändiger Kampf II",Sonderfertigkeit.Typ.NAHKAMPF, 400);
 
-			createSonderfertigkeit("Berittener Schütze",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Berittener Schütze",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Betäubungsschlag",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Betäubungsschlag",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Binden",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Binden",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Blindkampf",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Blindkampf",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Defensiver Kampfstil",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Defensiver Kampfstil",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit( "Doppelangriff",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit( "Doppelangriff",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit( "Eisenhagel",Sonderfertigkeit.Typ.KAMPF, 150);
+			createSonderfertigkeit( "Eisenhagel",Sonderfertigkeit.Typ.NAHKAMPF, 150);
 
-			createSonderfertigkeit( "Entwaffnen",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit( "Entwaffnen",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit( "Festnageln",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit( "Festnageln",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit( "Finte",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit( "Finte",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit( "Formation",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit( "Formation",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit( "Gegenhalten",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit( "Gegenhalten",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit( "Geschützmeister",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit( "Geschützmeister",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit( "Gezielter Stich",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit( "Gezielter Stich",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit( "Halbschwert",Sonderfertigkeit.Typ.KAMPF, 150);
+			createSonderfertigkeit( "Halbschwert",Sonderfertigkeit.Typ.NAHKAMPF, 150);
 
-			createSonderfertigkeit( "Hammerschlag",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit( "Hammerschlag",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit( "Improvisierte Waffen",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit( "Improvisierte Waffen",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Kampf Im Wasser",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Kampf Im Wasser",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Kampfgespür",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Kampfgespür",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Kampfreflexe",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Kampfreflexe",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Klingensturm",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Klingensturm",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Klingentänzer",Sonderfertigkeit.Typ.KAMPF, 400);
+			createSonderfertigkeit("Klingentänzer",Sonderfertigkeit.Typ.NAHKAMPF, 400);
 
-			createSonderfertigkeit("Klingenwand",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Klingenwand",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Kriegsreiterei",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Kriegsreiterei",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Linkhand",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Linkhand",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Meisterliches Entwaffnen",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Meisterliches Entwaffnen",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Meisterparade",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Meisterparade",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Meisterschütze",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Meisterschütze",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Niederwerfen",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Niederwerfen",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Parierwaffen I",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Parierwaffen I",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Parierwaffen II",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Parierwaffen II",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Reiterkampf",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Reiterkampf",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Rüstungsgewöhnung I",Sonderfertigkeit.Typ.KAMPF, 150);
+			createSonderfertigkeit("Rüstungsgewöhnung I",Sonderfertigkeit.Typ.NAHKAMPF, 150);
 
-			createSonderfertigkeit("Rüstungsgewöhnung II",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Rüstungsgewöhnung II",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Rüstungsgewöhnung III",Sonderfertigkeit.Typ.KAMPF, 450);
+			createSonderfertigkeit("Rüstungsgewöhnung III",Sonderfertigkeit.Typ.NAHKAMPF, 450);
 
-			createSonderfertigkeit("Scharfschütze",Sonderfertigkeit.Typ.KAMPF, 300);
+			createSonderfertigkeit("Scharfschütze",Sonderfertigkeit.Typ.NAHKAMPF, 300);
 
-			createSonderfertigkeit("Schildkampf I",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Schildkampf I",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Schildkampf II",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Schildkampf II",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Schildspalter",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Schildspalter",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Schnellladen Armbrust",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Schnellladen Armbrust",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Schnellladen Bogen",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Schnellladen Bogen",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Schnellziehen",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Schnellziehen",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Spießgespann",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Spießgespann",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Sturmangriff",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Sturmangriff",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Tod von Links",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Tod von Links",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Todesstoß",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Todesstoß",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Turnierreiterei",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Turnierreiterei",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Umreißen",Sonderfertigkeit.Typ.KAMPF, 100);
+			createSonderfertigkeit("Umreißen",Sonderfertigkeit.Typ.NAHKAMPF, 100);
 
-			createSonderfertigkeit("Unterwasserkampf",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Unterwasserkampf",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Waffe zerbrechen",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Waffe zerbrechen",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
 			//pro Waffe, Schild!!
-			createSonderfertigkeit("Waffenmeister",Sonderfertigkeit.Typ.KAMPF, 400);
+			createSonderfertigkeit("Waffenmeister",Sonderfertigkeit.Typ.NAHKAMPF, 400);
 
 			//pro Waffe!! 20*AKT für die erste, 40*AKT für die zweite etc...
-			createSonderfertigkeit("Waffenspezialisierung",Sonderfertigkeit.Typ.KAMPF);
+			createSonderfertigkeit("Waffenspezialisierung",Sonderfertigkeit.Typ.NAHKAMPF);
 
-			createSonderfertigkeit("Windmühle",Sonderfertigkeit.Typ.KAMPF, 200);
+			createSonderfertigkeit("Windmühle",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
-			createSonderfertigkeit("Wuchtschlag",Sonderfertigkeit.Typ.KAMPF, 200);
-
-			/**
-			 * Kampf (waffenlos)
-			 */
-			createSonderfertigkeit("Auspendeln",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Beinarbeit",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Biss",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Block",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Doppelschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Eisenarm",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
-
-			createSonderfertigkeit("Fußfeger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Gerade",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Griff",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Halten",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Handkante",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
-
-			createSonderfertigkeit("Hoher Tritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Klammer",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Knaufschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Knie",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Kopfstoß",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Kreuzblock",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Niederringen",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Schmetterschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Schmutzige Tricks",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 60);
-
-			createSonderfertigkeit("Schwanzfeger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 20);
-
-			createSonderfertigkeit("Schwanzschlag",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 10);
-
-			createSonderfertigkeit("Schwinger",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Schwitzkasten",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 20);
-
-			createSonderfertigkeit("Sprung",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Sprungtritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Tritt",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
-
-			createSonderfertigkeit("Versteckte Klinge",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 50);
-
-			createSonderfertigkeit("Wurf",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 40);
-
-			createSonderfertigkeit("Würgegriff",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 30);
+			createSonderfertigkeit("Wuchtschlag",Sonderfertigkeit.Typ.NAHKAMPF, 200);
 
 			/**
-			 * Kampftechniken (waffenlos)
+			 * Waffenlose Kampf
 			 */
-			createSonderfertigkeit("Bornländisch",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 100);
+			createSonderfertigkeit("Auspendeln",Sonderfertigkeit.Typ.MANOEVER, 30);
 
-			createSonderfertigkeit("Gladiatorenstil",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
+			createSonderfertigkeit("Beinarbeit",Sonderfertigkeit.Typ.MANOEVER, 30);
 
-			createSonderfertigkeit("Hammerfaust",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
+			createSonderfertigkeit("Biss",Sonderfertigkeit.Typ.MANOEVER, 40);
 
-			createSonderfertigkeit("Hruruzat",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 200);
+			createSonderfertigkeit("Block",Sonderfertigkeit.Typ.MANOEVER, 30);
 
-			createSonderfertigkeit("Mercenario",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 200);
+			createSonderfertigkeit("Doppelschlag",Sonderfertigkeit.Typ.MANOEVER, 50);
 
-			createSonderfertigkeit("Unauer Schule",Sonderfertigkeit.Typ.WAFFENLOSER_KAMPF, 150);
+			createSonderfertigkeit("Eisenarm",Sonderfertigkeit.Typ.MANOEVER, 60);
+
+			createSonderfertigkeit("Fußfeger",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Gerade",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			createSonderfertigkeit("Griff",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			createSonderfertigkeit("Halten",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Handkante",Sonderfertigkeit.Typ.MANOEVER, 60);
+
+			createSonderfertigkeit("Hoher Tritt",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Klammer",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Knaufschlag",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Knie",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			createSonderfertigkeit("Kopfstoß",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Kreuzblock",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Niederringen",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Schmetterschlag",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Schmutzige Tricks",Sonderfertigkeit.Typ.MANOEVER, 60);
+
+			createSonderfertigkeit("Schwanzfeger",Sonderfertigkeit.Typ.MANOEVER, 20);
+
+			createSonderfertigkeit("Schwanzschlag",Sonderfertigkeit.Typ.MANOEVER, 10);
+
+			createSonderfertigkeit("Schwinger",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			createSonderfertigkeit("Schwitzkasten",Sonderfertigkeit.Typ.MANOEVER, 20);
+
+			createSonderfertigkeit("Sprung",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Sprungtritt",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Tritt",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			createSonderfertigkeit("Versteckte Klinge",Sonderfertigkeit.Typ.MANOEVER, 50);
+
+			createSonderfertigkeit("Wurf",Sonderfertigkeit.Typ.MANOEVER, 40);
+
+			createSonderfertigkeit("Würgegriff",Sonderfertigkeit.Typ.MANOEVER, 30);
+
+			/**
+			 * Waffenlose Kampfstile
+			 */
+			createSonderfertigkeit("Waffenloser Kampfstil: Bornländisch",Sonderfertigkeit.Typ.NAHKAMPF, 100);
+
+			createSonderfertigkeit("Waffenloser Kampfstil: Gladiatorenstil",Sonderfertigkeit.Typ.NAHKAMPF, 150);
+
+			createSonderfertigkeit("Waffenloser Kampfstil: Hammerfaust",Sonderfertigkeit.Typ.NAHKAMPF, 150);
+
+			createSonderfertigkeit("Waffenloser Kampfstil: Hruruzat",Sonderfertigkeit.Typ.NAHKAMPF, 200);
+
+			createSonderfertigkeit("Waffenloser Kampfstil: Mercenario",Sonderfertigkeit.Typ.NAHKAMPF, 200);
+
+			createSonderfertigkeit("Waffenloser Kampfstil: Unauer Schule",Sonderfertigkeit.Typ.NAHKAMPF, 150);
 
 			/**
 			 * Magische
 			 */
-			createSonderfertigkeit("Apport",Sonderfertigkeit.Typ.OBJEKTRITUAL, 200);
-
 			createSonderfertigkeit("Astrale Meditation",Sonderfertigkeit.Typ.MAGISCH, 100);
 
 			// = Große Mditation
 			createSonderfertigkeit("Atem der Mutter",Sonderfertigkeit.Typ.MAGISCH, 100);
 
 			createSonderfertigkeit("Aura verhüllen",Sonderfertigkeit.Typ.MAGISCH, 500);
-
-			createSonderfertigkeit("Bannschwert",Sonderfertigkeit.Typ.OBJEKTRITUAL, 200);
 
 			createSonderfertigkeit("Blutmagie",Sonderfertigkeit.Typ.MAGISCH, 200);
 
@@ -321,8 +318,10 @@ class SonderfertigkeitBootStrap {
 
 			createSonderfertigkeit("Meisterliche Zauberkontrolle II",Sonderfertigkeit.Typ.MAGISCH, 300);
 
-			//Je nach Merkmal 100/200/300
-			createSonderfertigkeit("Merkmalskenntnis",Sonderfertigkeit.Typ.MAGISCH);
+			for (merkmal in Merkmal) {
+				println merkmal.name+": "+merkmal.kosten+"/"+merkmal.getKosten()
+				createSonderfertigkeit("Merkmalskenntnis $merkmal.name",Sonderfertigkeit.Typ.MERKMALSKENNTNIS, merkmal.kosten);
+			}
 
 			createSonderfertigkeit("Nekromant",Sonderfertigkeit.Typ.MAGISCH, 250);
 
@@ -382,8 +381,15 @@ class SonderfertigkeitBootStrap {
 
 			// 20*Anzahl*AKT
 			createSonderfertigkeit("Zauberspezialisierung",Sonderfertigkeit.Typ.MAGISCH);
-
-			createSonderfertigkeit("Zauberzeichen",Sonderfertigkeit.Typ.MAGISCH, 200);
+			
+			/**
+			* Objektrituale
+			*/
+			createSonderfertigkeit("Apport",Sonderfertigkeit.Typ.OBJEKTRITUAL, 200);
+			
+			createSonderfertigkeit("Bannschwert",Sonderfertigkeit.Typ.OBJEKTRITUAL, 200);
+			
+			createSonderfertigkeit("Zauberzeichen",Sonderfertigkeit.Typ.OBJEKTRITUAL, 200);
 
 			/**
 			 * Geweihte
