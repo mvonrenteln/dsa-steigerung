@@ -21,12 +21,14 @@
  */
 package dsa.held
 
-import dsa.steigerung.SKT;
+import dsa.steigerung.SKT
 
 
 class Eigenschaft extends Charakteristik {
 
 	String kuerzel
+	
+	SKT kosten
 
 	public Eigenschaft() {
 		kosten = SKT.H
