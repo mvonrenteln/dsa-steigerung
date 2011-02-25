@@ -21,16 +21,20 @@
  */
 package dsa.held
 
+import dsa.steigerung.SKT;
 
 
 class Eigenschaft extends Charakteristik {
 
+	String kuerzel
+
+	public Eigenschaft() {
+		kosten = SKT.H
+	}
+
 	enum Instanz {
 		MU, KL, IN, CH, FF, GE, KO, KK
 	}
-
-
-	String kuerzel
 
 	static Eigenschaft getAt(Instanz instanz) {
 		return Eigenschaft.findByKuerzel(instanz.name())
