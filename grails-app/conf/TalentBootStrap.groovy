@@ -441,7 +441,7 @@ class TalentBootStrap {
 
 			createTalent("Töpfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
-			createTalent("Viezucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Viehzucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
 			createTalent("Webkunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
 
