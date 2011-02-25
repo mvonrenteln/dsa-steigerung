@@ -11,7 +11,9 @@ class SonderfertigkeitTests extends GrailsUnitTestCase {
         super.tearDown()
     }
 
-    void testSomething() {
-
+    void testMerkmalskenntnis() {
+		for (merkmal in Merkmal) {
+			assert merkmal.kosten > 99
+		}
     }
 }
