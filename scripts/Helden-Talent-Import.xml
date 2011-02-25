@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="helden.xsl"?>
+
+<helden xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="5.1.0" xsi:noNamespaceSchemaLocation="helden.xsd">
+<held key="1298624122341" name="poiuztrew">
+<geschlecht name="männlich"/>
+<setting name="DSA 4.1 und Unter dem Westwind"/>
+<mods/>
+<rasse name="helden.model.rasse.Mittellaender" string="Mittelländer">
+<groesse gewicht="60" value="160"/>
+<aussehen alter="0" augenfarbe="-" aussehentext0="" aussehentext1="" aussehentext2="" aussehentext3="" familietext0="" familietext1="" familietext2="" familietext3="" familietext4="" familietext5="" gbjahr="0" gbmonat="9" gbtag="1" gprest="0" gpstart="0" haarfarbe="-" kalender="Hal" stand="" titel=""/>
+</rasse>
+<kultur name="helden.model.kultur.Almada" string="Almada"/>
+<ausbildungen>
+<ausbildung art="Hauptprofession" name="helden.model.profession.Magier" string="Schule der Beherrschung zu Neersand">
+<variante name="Schule der Beherrschung zu Neersand"/>
+</ausbildung>
+</ausbildungen>
+<eingegeben value="true"/>
+<notiz notiz0="Notizen" notiz1="" notiz10="" notiz11="" notiz2="" notiz3="" notiz4="" notiz5="" notiz6="" notiz7="" notiz8="" notiz9=""/>
+<portraet value=""/>
+<abenteuerpunkte value="50000"/>
+<freieabenteuerpunkte value="49481"/>
+<eigenschaft mod="0" name="Mut" startwert="13" value="8"/>
+<eigenschaft mod="0" name="Klugheit" startwert="13" value="8"/>
+<eigenschaft mod="0" name="Intuition" startwert="13" value="8"/>
+<eigenschaft mod="0" name="Charisma" startwert="16" value="8"/>
+<eigenschaft mod="0" name="Fingerfertigkeit" startwert="14" value="8"/>
+<eigenschaft mod="0" name="Gewandtheit" startwert="13" value="8"/>
+<eigenschaft mod="0" name="Konstitution" startwert="12" value="8"/>
+<eigenschaft mod="0" name="Körperkraft" startwert="13" value="8"/>
+<eigenschaft mod="1" name="Sozialstatus" startwert="10" value="8"/>
+<eigenschaft mod="10" name="Lebensenergie" value="0"/>
+<eigenschaft mod="12" name="Ausdauer" value="0"/>
+<eigenschaft grossemeditation="0" mod="7" mrmod="-4" name="Astralenergie" value="0"/>
+<eigenschaft karmalqueste="0" mod="0" name="Karmaenergie" value="0"/>
+<eigenschaft mod="-4" name="Magieresistenz" value="0"/>
+<eigenschaft mod="0" name="ini" value="6"/>
+<eigenschaft mod="0" name="at" value="5"/>
+<eigenschaft mod="0" name="pa" value="5"/>
+<eigenschaft mod="0" name="fk" value="5"/>
+<gilde name="keine"/>
+<vorteil name="Adlige Abstammung"/>
+<vorteil name="Adliges Erbe"/>
+<vorteil name="Affinität zu " value="Dämonen"/>
+<vorteil name="Akademische Ausbildung (Gelehrter)"/>
+<vorteil name="Akademische Ausbildung (Krieger)"/>
+<vorteil name="Akademische Ausbildung (Magier)"/>
+<vorteil name="Altersresistenz"/>
+<vorteil name="Amtsadel"/>
+<vorteil name="Astrale Regeneration" value="1"/>
+<vorteil name="Astralmacht" value="1"/>
+<vorteil name="Ausdauernd" value="2"/>
+<vorteil name="Ausdauernder Zauberer"/>
+<vorteil name="Ausrüstungsvorteil" value="5"/>
+<vorteil name="Balance"/>
+<vorteil name="Begabung für [Merkmal]" value="Antimagie"/>
+<vorteil name="Begabung für [Ritual]" value="Apport"/>
+<vorteil name="Begabung für [Talent]" value="Anderthalbhänder"/>
+<vorteil name="Begabung für [Talentgruppe]" value="Fernkampf"/>
+<vorteil name="Begabung für [Zauber]" value="Abvenenum reine Speise"/>
+<vorteil name="Beidhändig"/>
+<vorteil name="Aberglaube" value="5"/>
+<vorteil name="Agrimothwahn" value="5"/>
+<vorteil name="Albino"/>
+<vorteil name="Angst vor Feuer" value="6"/>
+<vorteil name="Angst vor Menschenmassen" value="5"/>
+<ereignisse>
+<ereignis Abenteuerpunkte="-2" Alt="0" Info="Gegenseitiges Lehren" Neu="1" obj="Kochen" text="Talent steigern" time="1298626932764" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-4" Alt="1" Info="Gegenseitiges Lehren" Neu="2" obj="Kochen" text="Talent steigern" time="1298626932946" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-6" Alt="2" Info="Gegenseitiges Lehren" Neu="3" obj="Kochen" text="Talent steigern" time="1298626933099" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-8" Alt="3" Info="Gegenseitiges Lehren" Neu="4" obj="Kochen" text="Talent steigern" time="1298626933266" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-11" Alt="4" Info="Gegenseitiges Lehren" Neu="5" obj="Kochen" text="Talent steigern" time="1298626933418" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-14" Alt="5" Info="Gegenseitiges Lehren" Neu="6" obj="Kochen" text="Talent steigern" time="1298626933570" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-17" Alt="6" Info="Gegenseitiges Lehren" Neu="7" obj="Kochen" text="Talent steigern" time="1298626933722" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-2" Alt="0" Info="Gegenseitiges Lehren" Neu="1" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934074" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-4" Alt="1" Info="Gegenseitiges Lehren" Neu="2" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934242" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-6" Alt="2" Info="Gegenseitiges Lehren" Neu="3" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934402" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-8" Alt="3" Info="Gegenseitiges Lehren" Neu="4" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934555" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-11" Alt="4" Info="Gegenseitiges Lehren" Neu="5" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934706" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-14" Alt="5" Info="Gegenseitiges Lehren" Neu="6" obj="Malen/Zeichnen" text="Talent steigern" time="1298626934858" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-17" Alt="6" Info="Gegenseitiges Lehren" Neu="7" obj="Malen/Zeichnen" text="Talent steigern" time="1298626935011" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-19" Alt="7" Info="Gegenseitiges Lehren" Neu="8" obj="Malen/Zeichnen" text="Talent steigern" time="1298626935179" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-2" Alt="0" Info="Gegenseitiges Lehren" Neu="1" obj="Schneidern" text="Talent steigern" time="1298626935475" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-4" Alt="1" Info="Gegenseitiges Lehren" Neu="2" obj="Schneidern" text="Talent steigern" time="1298626935635" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-6" Alt="2" Info="Gegenseitiges Lehren" Neu="3" obj="Schneidern" text="Talent steigern" time="1298626935794" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-8" Alt="3" Info="Gegenseitiges Lehren" Neu="4" obj="Schneidern" text="Talent steigern" time="1298626935955" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-11" Alt="4" Info="Gegenseitiges Lehren" Neu="5" obj="Schneidern" text="Talent steigern" time="1298626936107" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-14" Alt="5" Info="Gegenseitiges Lehren" Neu="6" obj="Schneidern" text="Talent steigern" time="1298626936267" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-17" Alt="6" Info="Gegenseitiges Lehren" Neu="7" obj="Schneidern" text="Talent steigern" time="1298626936411" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-19" Alt="7" Info="Gegenseitiges Lehren" Neu="8" obj="Schneidern" text="Talent steigern" time="1298626936571" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-22" Alt="8" Info="Gegenseitiges Lehren" Neu="9" obj="Schneidern" text="Talent steigern" time="1298626936706" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-25" Alt="9" Info="Gegenseitiges Lehren" Neu="10" obj="Schneidern" text="Talent steigern" time="1298626936866" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-28" Alt="10" Info="Gegenseitiges Lehren" Neu="11" obj="Schneidern" text="Talent steigern" time="1298626937019" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-1" Alt="0" Info="Lehrmeister" Neu="1" obj="Seefahrt" text="Talent steigern" time="1298626950387" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-2" Alt="1" Info="Lehrmeister" Neu="2" obj="Seefahrt" text="Talent steigern" time="1298626951019" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-3" Alt="2" Info="Lehrmeister" Neu="3" obj="Seefahrt" text="Talent steigern" time="1298626951210" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-4" Alt="3" Info="Lehrmeister" Neu="4" obj="Seefahrt" text="Talent steigern" time="1298626951389" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-6" Alt="4" Info="Lehrmeister" Neu="5" obj="Seefahrt" text="Talent steigern" time="1298626951563" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-7" Alt="5" Info="Lehrmeister" Neu="6" obj="Seefahrt" text="Talent steigern" time="1298626951730" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-8" Alt="6" Info="Lehrmeister" Neu="7" obj="Seefahrt" text="Talent steigern" time="1298626951899" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-10" Alt="7" Info="Lehrmeister" Neu="8" obj="Seefahrt" text="Talent steigern" time="1298626952074" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-11" Alt="8" Info="Lehrmeister" Neu="9" obj="Seefahrt" text="Talent steigern" time="1298626952251" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-13" Alt="9" Info="Lehrmeister" Neu="10" obj="Seefahrt" text="Talent steigern" time="1298626952443" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-14" Alt="10" Info="Lehrmeister" Neu="11" obj="Seefahrt" text="Talent steigern" time="1298626952643" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-2" Alt="0" Info="Selbststudium" Neu="1" obj="Seiler" text="Talent steigern" time="1298626960819" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-6" Alt="1" Info="Selbststudium" Neu="2" obj="Seiler" text="Talent steigern" time="1298626961003" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-9" Alt="2" Info="Selbststudium" Neu="3" obj="Seiler" text="Talent steigern" time="1298626961171" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-13" Alt="3" Info="Selbststudium" Neu="4" obj="Seiler" text="Talent steigern" time="1298626961315" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-17" Alt="4" Info="Selbststudium" Neu="5" obj="Seiler" text="Talent steigern" time="1298626961475" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-21" Alt="5" Info="Selbststudium" Neu="6" obj="Seiler" text="Talent steigern" time="1298626961635" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-25" Alt="6" Info="Selbststudium" Neu="7" obj="Seiler" text="Talent steigern" time="1298626961803" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-10" Alt="7" Info="Lehrmeister" Neu="8" obj="Seiler" text="Talent steigern" time="1298626968563" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-11" Alt="8" Info="Lehrmeister" Neu="9" obj="Seiler" text="Talent steigern" time="1298626968731" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-13" Alt="9" Info="Lehrmeister" Neu="10" obj="Seiler" text="Talent steigern" time="1298626968899" version="5.1.0"/>
+<ereignis Abenteuerpunkte="-14" Alt="10" Info="Lehrmeister" Neu="11" obj="Seiler" text="Talent steigern" time="1298626969042" version="5.1.0"/>
+</ereignisse>
+<talent lernmethode="Gegenseitiges Lehren" name="Anderthalbhänder" probe=" (GE/GE/KK)" value="1"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Armbrust" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Belagerungswaffen" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Blasrohr" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Bogen" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Diskus" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Dolche" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fechtwaffen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Hiebwaffen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Infanteriewaffen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kettenstäbe" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kettenwaffen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Lanzenreiten" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Peitsche" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Raufen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Ringen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schleuder" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schwerter" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Speere" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Stäbe" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Säbel" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Wurfbeile" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Wurfmesser" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Wurfspeere" probe=" (GE/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Zweihandflegel" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Zweihandhiebwaffen" probe=" (GE/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Zweihandschwerter/-säbel" probe=" (GE/GE/KK)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Akrobatik" probe=" (MU/GE/KK)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Athletik" probe=" (GE/KO/KK)" value="0"/>
+<talent be="BE" lernmethode="Gegenseitiges Lehren" name="Fliegen" probe=" (MU/IN/GE)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Gaukeleien" probe=" (MU/CH/FF)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Klettern" probe=" (MU/GE/KK)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Körperbeherrschung" probe=" (MU/IN/GE)" value="0"/>
+<talent be="BE-2" lernmethode="Gegenseitiges Lehren" name="Reiten" probe=" (CH/GE/KK)" value="0"/>
+<talent be="BE" lernmethode="Gegenseitiges Lehren" name="Schleichen" probe=" (MU/IN/GE)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Schwimmen" probe=" (GE/KO/KK)" value="0"/>
+<talent be="" lernmethode="Gegenseitiges Lehren" name="Selbstbeherrschung" probe=" (MU/KO/KK)" value="0"/>
+<talent be="BE-2" lernmethode="Gegenseitiges Lehren" name="Sich verstecken" probe=" (MU/IN/GE)" value="0"/>
+<talent be="BE-3" lernmethode="Gegenseitiges Lehren" name="Singen" probe=" (IN/CH/CH)" value="0"/>
+<talent be="0-&gt;BE" lernmethode="Gegenseitiges Lehren" name="Sinnenschärfe" probe=" (KL/IN/IN)" value="0"/>
+<talent be="BE-2" lernmethode="Gegenseitiges Lehren" name="Skifahren" probe=" (GE/GE/KO)" value="0"/>
+<talent be="BE-4" lernmethode="Gegenseitiges Lehren" name="Stimmen imitieren" probe=" (KL/IN/CH)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Tanzen" probe=" (CH/GE/GE)" value="0"/>
+<talent be="BEx2" lernmethode="Gegenseitiges Lehren" name="Taschendiebstahl" probe=" (MU/IN/FF)" value="0"/>
+<talent be="" lernmethode="Gegenseitiges Lehren" name="Zechen" probe=" (IN/KO/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Betören" probe=" (IN/CH/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Etikette" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Gassenwissen" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Lehren" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Menschenkenntnis" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schauspielerei" probe=" (MU/KL/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schriftlicher Ausdruck" probe=" (KL/IN/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Sich verkleiden" probe=" (MU/CH/GE)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Überreden" probe=" (MU/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Überzeugen" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fallen stellen" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fesseln/Entfesseln" probe=" (FF/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fischen/Angeln" probe=" (IN/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fährtensuchen" probe=" (KL/IN/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Orientierung" probe=" (KL/IN/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Wettervorhersage" probe=" (KL/IN/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Wildnisleben" probe=" (IN/GE/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Anatomie" probe=" (MU/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Baukunst" probe=" (KL/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Brett-/Kartenspiel" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Deuten der Zeichen" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Geografie" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Geschichtswissen" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Gesteinskunde" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Götter und Kulte" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Heraldik" probe=" (KL/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Hüttenkunde" probe=" (KL/IN/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kriegskunst" probe=" (MU/KL/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kryptographie" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Magiekunde" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Mechanik" probe=" (KL/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Pflanzenkunde" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Philosophie" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Rechnen" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Rechtskunde" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Sagen und Legenden" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schätzen" probe=" (KL/IN/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Sprachenkunde" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Staatskunst" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Sternkunde" probe=" (KL/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Tierkunde" probe=" (MU/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Abrichten" probe=" (MU/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Ackerbau" probe=" (IN/FF/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Alchimie" probe=" (MU/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Bergbau" probe=" (IN/KO/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Bogenbau" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Boote fahren" probe=" (GE/KO/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Brauer" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Drucker" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fahrzeug lenken" probe=" (IN/CH/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Falschspiel" probe=" (MU/CH/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Feinmechanik" probe=" (KL/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Feuersteinbearbeitung" probe=" (KL/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Fleischer" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Gerber/Kürschner" probe=" (KL/FF/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Glaskunst" probe=" (FF/FF/KO)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Grobschmied" probe=" (FF/KO/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Handel" probe=" (KL/IN/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Hauswirtschaft" probe=" (IN/CH/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Heilkunde: Gift" probe=" (MU/KL/IN)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Heilkunde: Krankheiten" probe=" (MU/KL/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Heilkunde: Seele" probe=" (IN/CH/CH)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Heilkunde: Wunden" probe=" (KL/CH/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Holzbearbeitung" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Instrumentenbauer" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kartografie" probe=" (KL/KL/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kochen" probe=" (KL/IN/FF)" value="7"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Kristallzucht" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Lederarbeiten" probe=" (KL/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Malen/Zeichnen" probe=" (KL/IN/FF)" value="8"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Maurer" probe=" (FF/GE/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Metallguss" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Musizieren" probe=" (IN/CH/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schlösser knacken" probe=" (IN/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Schnaps brennen" probe=" (KL/IN/FF)" value="0"/>
+<talent lernmethode="Lehrmeister" name="Schneidern" probe=" (KL/FF/FF)" value="11"/>
+<talent lernmethode="Lehrmeister" name="Seefahrt" probe=" (FF/GE/KK)" value="11"/>
+<talent lernmethode="Lehrmeister" name="Seiler" probe=" (FF/FF/KK)" value="11"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Steinmetz" probe=" (FF/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Steinschneider/Juwelier" probe=" (IN/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Stellmacher" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Stoffe färben" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Tätowieren" probe=" (IN/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Töpfern" probe=" (KL/FF/FF)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Viehzucht" probe=" (KL/IN/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Webkunst" probe=" (FF/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Winzer" probe=" (KL/FF/KK)" value="0"/>
+<talent lernmethode="Gegenseitiges Lehren" name="Zimmermann" probe=" (KL/FF/KK)" value="0"/>
+<kampfwerte name="Anderthalbhänder">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Dolche">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Fechtwaffen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Hiebwaffen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Infanteriewaffen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Kettenstäbe">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Kettenwaffen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Raufen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Ringen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Schwerter">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Speere">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Stäbe">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Säbel">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Zweihandflegel">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Zweihandhiebwaffen">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<kampfwerte name="Zweihandschwerter/-säbel">
+<attacke value="5"/>
+<parade value="5"/>
+</kampfwerte>
+<heldenausruestung name="jagtwaffe" nummer="0" set="0"/>
+<extention/>
+<geldboerse/>
+</held>
+</helden>

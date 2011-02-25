@@ -47,14 +47,19 @@ class Talent extends Charakteristik {
 	TalentGruppe talentGruppe
 
 	SKT kosten
+	
+	List eigenschaften
 
 	SKT getKosten() {
 		return kosten ?: talentGruppe?.kosten
 	}
+	
+	static hasMany = [eigenschaften: Eigenschaft]
 
 	static constraints = {
 		typ(nullable:false)
 		talentGruppe(nullable:false)
 		kosten(nullable:true)
+		eigenschaften(size:0..3)
 	}
 }

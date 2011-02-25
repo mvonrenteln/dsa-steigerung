@@ -21,8 +21,7 @@
  */
 
 import dsa.Quelle
-import dsa.Regeln;
-import dsa.held.Charakteristik;
+import dsa.held.Eigenschaft;
 import dsa.held.Schrift
 import dsa.held.Sprache
 import dsa.held.Talent
@@ -34,192 +33,205 @@ class TalentBootStrap {
 	def init = { servletContext ->
 
 		if (!Talent.count()) {
+			
+			
+			/**
+			 * Eigenschaften-Kurzform
+			 */
+			def MU = Eigenschaft[Eigenschaft.Instanz.MU]
+			def KL = Eigenschaft[Eigenschaft.Instanz.KL]
+			def IN = Eigenschaft[Eigenschaft.Instanz.IN]
+			def CH = Eigenschaft[Eigenschaft.Instanz.CH]
+			def FF = Eigenschaft[Eigenschaft.Instanz.FF]
+			def GE = Eigenschaft[Eigenschaft.Instanz.GE]
+			def KO = Eigenschaft[Eigenschaft.Instanz.KO]
+			def KK = Eigenschaft[Eigenschaft.Instanz.KK]
 
 			/*
 			 * Kampf-TALENTE
 			 */
-			createTalent("Anderthalbhänder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Anderthalbhänder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Armbrust", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
+			createTalent("Armbrust", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C, [GE, FF, KK])
 
-			createTalent("Belagerungswaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Belagerungswaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, FF, KK])
 
-			createTalent("Blasrohr", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Blasrohr", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, FF, KK])
 
-			createTalent("Bogen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Bogen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, FF, KK])
 
-			createTalent("Diskus", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Diskus", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, FF, KK])
 
-			createTalent("Dolche", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+			createTalent("Dolche", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D, [GE, GE, KK])
 
-			createTalent("Fechtwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Fechtwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+			createTalent("Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D, [GE, GE, KK])
 
-			createTalent("Infanteriewaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL,  SKT.D)
+			createTalent("Infanteriewaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL,  SKT.D, [GE, GE, KK])
 
-			createTalent("Kettenstäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Kettenstäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Kettenwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Kettenwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, GE, KK])
 
-			createTalent("Lanzenreiten", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Lanzenreiten", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Peitsche", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Peitsche", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Raufen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.C)
+			createTalent("Raufen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.C, [GE, GE, KK])
 
-			createTalent("Ringen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+			createTalent("Ringen", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D, [GE, GE, KK])
 
-			createTalent("Säbel", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D)
+			createTalent("Säbel", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.D, [GE, GE, KK])
 
-			createTalent("Schleuder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Schleuder", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, FF, KK])
 
-			createTalent("Schwerter", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Schwerter", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
-			createTalent("Speere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Speere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, GE, KK])
 
-			createTalent("Stäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Stäbe", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, GE, KK])
 
-			createTalent("Wurfbeile", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
+			createTalent("Wurfbeile", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C, [GE, FF, KK])
 
-			createTalent("Wurfmesser", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.C)
+			createTalent("Wurfmesser", TalentGruppe.KAMPF, Talent.Typ.BASIS, SKT.C, [GE, FF, KK])
 
-			createTalent("Wurfspeere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C)
+			createTalent("Wurfspeere", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.C, [GE, FF, KK])
 
-			createTalent("Zweihandflegel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Zweihandflegel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, GE, KK])
 
-			createTalent("Zweihand-Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D)
+			createTalent("Zweihand-Hiebwaffen", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.D, [GE, GE, KK])
 
 
-			createTalent("Zweihandschwerter/-säbel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E)
+			createTalent("Zweihandschwerter/-säbel", TalentGruppe.KAMPF, Talent.Typ.SPEZIAL, SKT.E, [GE, GE, KK])
 
 			/*
 			 * KOERPERLICHE TALENTE
 			 */
-			createTalent("Akrobatik", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Akrobatik", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [MU, GE, KK])
 
-			createTalent("Athletik", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Athletik", TalentGruppe.KOERPER, Talent.Typ.BASIS, [GE, KO, KK])
 
-			createTalent("Fliegen", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Fliegen", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [MU, IN, GE])
 
-			createTalent("Gaukeleien", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Gaukeleien", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [MU, CH, FF])
 
-			createTalent("Klettern", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Klettern", TalentGruppe.KOERPER, Talent.Typ.BASIS, [MU, GE, KK])
 
-			createTalent("Körperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Körperbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS, [MU, IN, GE])
 
-			createTalent("Reiten", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Reiten", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [CH, GE, KK])
 
-			createTalent("Schleichen", TalentGruppe.KOERPER, Talent.Typ.BASIS);
+			createTalent("Schleichen", TalentGruppe.KOERPER, Talent.Typ.BASIS, [MU, IN, GE]);
 
-			createTalent("Schwimmen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Schwimmen", TalentGruppe.KOERPER, Talent.Typ.BASIS, [GE, KO, KK])
 
-			createTalent("Selbstbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Selbstbeherrschung", TalentGruppe.KOERPER, Talent.Typ.BASIS, [MU, KO, KK])
 
-			createTalent("Sich Verstecken", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Sich Verstecken", TalentGruppe.KOERPER, Talent.Typ.BASIS, [MU, IN, GE])
 
-			createTalent("Singen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Singen", TalentGruppe.KOERPER, Talent.Typ.BASIS, [IN, CH, CH])
 
-			createTalent("Sinnenschärfe", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Sinnenschärfe", TalentGruppe.KOERPER, Talent.Typ.BASIS, [KL, IN, IN])
 
-			createTalent("Skifahren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Skifahren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [GE, GE, KO])
 
-			createTalent("Stimmen Imitieren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Stimmen Imitieren", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Tanzen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Tanzen", TalentGruppe.KOERPER, Talent.Typ.BASIS, [CH, GE, GE])
 
-			createTalent("Taschendiebstahl", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL)
+			createTalent("Taschendiebstahl", TalentGruppe.KOERPER, Talent.Typ.SPEZIAL, [MU, IN, FF])
 
-			createTalent("Zechen", TalentGruppe.KOERPER, Talent.Typ.BASIS)
+			createTalent("Zechen", TalentGruppe.KOERPER, Talent.Typ.BASIS, [IN, KO, KK])
 
 			/*
 			 * GESELLSCHAFTLICHE TALENTE
 			 */
-			createTalent("Betören", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Betören", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [IN, CH, CH])
 
-			createTalent("Etikette", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Etikette", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Gassenwissen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Gassenwissen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Lehren", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Lehren", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Menschenkenntnis", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
+			createTalent("Menschenkenntnis", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS, [KL, IN, CH])
 
-			createTalent("Schauspielerei", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Schauspielerei", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [MU, KL, CH])
 
-			createTalent("Schriftlicher Ausdruck", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Schriftlicher Ausdruck", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [KL, IN, IN])
 
-			createTalent("Sich Verkleiden", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Sich Verkleiden", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [MU, CH, GE])
 
-			createTalent("Überreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS)
+			createTalent("Überreden", TalentGruppe.GESELLSCHAFT, Talent.Typ.BASIS, [MU, IN, CH])
 
-			createTalent("Überzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL)
+			createTalent("Überzeugen", TalentGruppe.GESELLSCHAFT, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
 			/*
 			 * NATUR-TALENTE
 			 */
-			createTalent("Fährtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS)
+			createTalent("Fährtensuchen", TalentGruppe.NATUR, Talent.Typ.BASIS, [KL, IN, KO])
 
-			createTalent("Fallenstellen", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Fallenstellen", TalentGruppe.NATUR, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Fesseln/Entfesseln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Fesseln/Entfesseln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL, [FF, GE, KK])
 
-			createTalent("Fischen/Angeln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Fischen/Angeln", TalentGruppe.NATUR, Talent.Typ.SPEZIAL, [IN, FF, KK])
 
-			createTalent("Orientierung", TalentGruppe.NATUR, Talent.Typ.BASIS)
+			createTalent("Orientierung", TalentGruppe.NATUR, Talent.Typ.BASIS, [KL, IN, IN])
 
-			createTalent("Wettervorhersage", TalentGruppe.NATUR, Talent.Typ.SPEZIAL)
+			createTalent("Wettervorhersage", TalentGruppe.NATUR, Talent.Typ.SPEZIAL, [KL, IN, IN])
 
-			createTalent("Wildnisleben", TalentGruppe.NATUR, Talent.Typ.BASIS)
+			createTalent("Wildnisleben", TalentGruppe.NATUR, Talent.Typ.BASIS, [IN, GE, KO])
 
 			/*
 			 * WISSENS-TALENTE
 			 */
-			createTalent("Anatomie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Anatomie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [MU, KL, FF])
 
-			createTalent("Baukunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Baukunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, FF])
 
-			createTalent("Brettspiel", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Brettspiel", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Geographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Geographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Geschichtswissen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Geschichtswissen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Gesteinskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Gesteinskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Götter/Kulte", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("Götter/Kulte", TalentGruppe.WISSEN, Talent.Typ.BASIS, [KL, KL, IN])
 
-			createTalent("Heraldik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Heraldik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, FF])
 
-			createTalent("Hüttenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Hüttenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, IN, KO])
 
-			createTalent("Kriegskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Kriegskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [MU, KL, CH])
 
-			createTalent("Kryptographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Kryptographie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Magiekunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Magiekunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Mechanik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Mechanik", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, FF])
 
-			createTalent("Pflanzenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Pflanzenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Philosophie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Philosophie", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Rechnen", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("Rechnen", TalentGruppe.WISSEN, Talent.Typ.BASIS, [KL, KL, IN])
 
-			createTalent("Rechtskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Rechtskunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Sagen/Legenden", TalentGruppe.WISSEN, Talent.Typ.BASIS)
+			createTalent("Sagen/Legenden", TalentGruppe.WISSEN, Talent.Typ.BASIS, [KL, IN, CH])
 
-			createTalent("Schätzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Schätzen", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, IN, IN])
 
-			createTalent("Sprachenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Sprachenkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Staatskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Staatskunst", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Sternkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Sternkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [KL, KL, IN])
 
-			createTalent("Tierkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL)
+			createTalent("Tierkunde", TalentGruppe.WISSEN, Talent.Typ.SPEZIAL, [MU, KL, IN])
 
 			/*
 			 * SPRACHEN
@@ -355,116 +367,116 @@ class TalentBootStrap {
 			/*
 			 * HANDWERKS-TALENTE
 			 */
-			createTalent("Abrichten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Abrichten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [MU, IN, CH])
 
-			createTalent("Ackerbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Ackerbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, FF, KO])
 
-			createTalent("Alchimie", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Alchimie", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [MU, KL, FF])
 
-			createTalent("Bergbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Bergbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, KO, KK])
 
-			createTalent("Bogenbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Bogenbau", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Boote Fahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Boote Fahren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [GE, KO, KK])
 
-			createTalent("Brauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Brauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Drucker", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Drucker", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Fahrzeug Lenken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Fahrzeug Lenken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, CH, FF])
 
-			createTalent("Falschspiel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Falschspiel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [MU, CH, FF])
 
-			createTalent("Feinmechanik", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Feinmechanik", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, FF])
 
-			createTalent("Feuersteinbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Feuersteinbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, FF])
 
-			createTalent("Fleischer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Fleischer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Gerber/Kürschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Gerber/Kürschner", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KO])
 
-			createTalent("Glaskunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Glaskunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, FF, KO])
 
-			createTalent("Grobschmied", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Grobschmied", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, KO, KK])
 
-			createTalent("Handel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Handel", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, CH])
 
-			createTalent("Hauswirtschaft", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Hauswirtschaft", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, CH, FF])
 
-			createTalent("Heilkunde Gift", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Heilkunde Gift", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [MU, KL, IN])
 
-			createTalent("Heilkunde Krankheiten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Heilkunde Krankheiten", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [MU, KL, CH])
 
-			createTalent("Heilkunde Seele", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Heilkunde Seele", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, CH, CH])
 
-			createTalent("Heilkunde Wunden", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Heilkunde Wunden", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, CH, FF])
 
-			createTalent("Holzbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Holzbearbeitung", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, FF, KK])
 
-			createTalent("Instrumentenbauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Instrumentenbauer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Kartographie", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Kartographie", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, KL, FF])
 
-			createTalent("Kochen", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Kochen", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, IN, FF])
 
-			createTalent("Kristallzucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Kristallzucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Lederarbeiten", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Lederarbeiten", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, FF, FF])
 
-			createTalent("Malen/Zeichnen", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Malen/Zeichnen", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, IN, FF])
 
-			createTalent("Maurer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Maurer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, GE, KK])
 
-			createTalent("Metallguss", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Metallguss", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Musizieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Musizieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, CH, FF])
 
-			createTalent("Schlösser Knacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Schlösser Knacken", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, FF, FF])
 
-			createTalent("Schnaps brennen", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Schnaps brennen", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, FF])
 
-			createTalent("Schneidern", TalentGruppe.HANDWERK, Talent.Typ.BASIS)
+			createTalent("Schneidern", TalentGruppe.HANDWERK, Talent.Typ.BASIS, [KL, FF, FF])
 
-			createTalent("Seefahrt", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Seefahrt", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, GE, KK])
 
-			createTalent("Seiler", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Seiler", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, FF, KK])
 
-			createTalent("Steinmetz", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Steinmetz", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, FF, KK])
 
-			createTalent("Steinschneider/Juwelier", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Steinschneider/Juwelier", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, FF, FF])
 
-			createTalent("Stellmacher", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Stellmacher", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Stoffe Färben", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Stoffe Färben", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Tätowieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Tätowieren", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [IN, FF, FF])
 
-			createTalent("Töpfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Töpfern", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, FF])
 
-			createTalent("Viehzucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Viehzucht", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, IN, KK])
 
-			createTalent("Webkunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Webkunst", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [FF, FF, KK])
 
-			createTalent("Winzer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Winzer", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
-			createTalent("Zimmermann", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL)
+			createTalent("Zimmermann", TalentGruppe.HANDWERK, Talent.Typ.SPEZIAL, [KL, FF, KK])
 
 			/*
 			 * GABEN
 			 */
-			createTalent("Gefahreninstinkt", TalentGruppe.GABEN, Talent.Typ.GABE)
+			createTalent("Gefahreninstinkt", TalentGruppe.GABEN, Talent.Typ.GABE, [])
 
-			createTalent("Magiegespür", TalentGruppe.GABEN, Talent.Typ.GABE)
+			createTalent("Magiegespür", TalentGruppe.GABEN, Talent.Typ.GABE, [])
 
-			createTalent("Prophezeien", TalentGruppe.GABEN, Talent.Typ.GABE)
+			createTalent("Prophezeien", TalentGruppe.GABEN, Talent.Typ.GABE, [])
 
-			createTalent("Zwergennase", TalentGruppe.GABEN, Talent.Typ.GABE)
+			createTalent("Zwergennase", TalentGruppe.GABEN, Talent.Typ.GABE, [])
 
 			/*
 			 * RITUALKENNTNIS
 			 */
 			// fremde Repräs., eigene Spalte D/E, fremde Spalte G, Kauf: 250
-			createTalent("Ritualkenntnis", TalentGruppe.RITUALKENNTNIS, Talent.Typ.RITUALKENNTNIS)
+			createTalent("Ritualkenntnis", TalentGruppe.RITUALKENNTNIS, Talent.Typ.RITUALKENNTNIS, [])
 		}
 	}
 
@@ -485,12 +497,13 @@ class TalentBootStrap {
 	}
 
 
-	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ) {
-		return createTalent (name, talentGruppe, typ, null)
+	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ, List eigenschaften) {
+		return createTalent (name, talentGruppe, typ, null, eigenschaften)
 	}
 
-	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ, SKT kosten) {
-		return new Talent(name: name, talentGruppe: talentGruppe, typ: typ, kosten: kosten, quelle: Quelle.OFFIZIELL).save(failOnError: true);
+	Talent createTalent(String name, TalentGruppe talentGruppe, Talent.Typ typ, SKT kosten, List eigenschaften) {
+		def talent = new Talent(name: name, talentGruppe: talentGruppe, typ: typ, kosten: kosten, eigenschaften: eigenschaften, quelle: Quelle.OFFIZIELL)
+		return talent.save(failOnError: true);
 	}
 
 	def destroy = {
