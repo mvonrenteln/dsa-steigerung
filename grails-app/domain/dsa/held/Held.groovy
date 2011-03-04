@@ -22,30 +22,35 @@
 package dsa.held
 
 
-import dsa.steigerung.Steigerung;
+import dsa.steigerung.Steigerung
 
+/**
+ * Stellt einen Helden dar.
+ * 
+ * @author marcvonrenteln
+ */
 class Held {
 
 	enum Geschlecht {
 		maennlich, weiblich
 	}
-	
+
 	enum Stand {
 		ledig, verheiratet, verwitwet
 	}
-	
+
 	String name
 
 	Geschlecht geschlecht
-	
+
 	String geburtstag
-	
+
 	int groesse
-	
+
 	int gewicht
 
 	String titel
-	
+
 	Stand stand
 
 	String augenfarbe
@@ -56,9 +61,66 @@ class Held {
 
 	String vorgeschichte
 
+	/**
+	 * Werte der Eigenschaften
+	 */
+	Eigenschaftswert MU
+	Eigenschaftswert KL
+	Eigenschaftswert IN
+	Eigenschaftswert CH
+	Eigenschaftswert FF
+	Eigenschaftswert GE
+	Eigenschaftswert KO
+	Eigenschaftswert KK
+
+	/**
+	 * Sequentielle Liste der Steigerungen.
+	 */
 	List steigerungen
 
-	static hasMany = [steigerungen : Steigerung]
+	static hasMany = [talente: Talentwert, zauber: Zauberfertigkeitswert, sonderfertigkeiten: Sonderfertigkeit, steigerungen : Steigerung]
+
+	/**
+	 * Initialisiert einen "leeren" Helden, in dem bereits die Eigenschaften vorhanden sind.
+	 */
+	public Held init() {
+		// Initialisiere alle Eigenschaften auf 0
+		MU = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.MU])
+		KL = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.KL])
+		IN = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.IN])
+		CH = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.CH])
+		FF = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.FF])
+		GE = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.GE])
+		KO = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.KO])
+		KK = new Eigenschaftswert(eigenschaft: Eigenschaft[Eigenschaft.Instanz.KK])
+
+		// Initialisiere alle Basistalente auf 0
+		List basisTalente = Talent.findAllByTyp(Talent.Typ.BASIS)
+		for (Talent talent in basisTalente) {
+			addToTalente(new Talentwert(ref: talent))
+		}
+		return this
+	}
+
+	public Map<String, List<Talent>> getTalenteNachGruppen() {
+		Map<String, List<Talent>> talenteNachGruppen = [:]
+		TalentGruppe.each {
+			talenteNachGruppen[it] = []
+		}
+		for (Talent talent in talente) {
+			talenteNachGruppen[talent.talentGruppe] << talent
+		}
+		return talenteNachGruppen
+	}
+
+	static transients = ["talenteNachGruppen"]
+
+	static mapping = {
+		talente(cascade: "all-delete-orphan")
+		zauber(cascade: "all-delete-orphan")
+		sonderfertikeiten(cascade: "all-delete-orphan")
+		steigerungen(cascade: "all-delete-orphan")
+	}
 
 	static constraints = {
 		name(nullable:false, blank:false, maxLength:50)
