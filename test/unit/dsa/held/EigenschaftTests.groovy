@@ -1,6 +1,5 @@
 package dsa.held
 
-import static dsa.held.Eigenschaft.Instanz.*;
 import grails.test.*
 import dsa.Quelle
 
@@ -18,6 +17,6 @@ class EigenschaftTests extends GrailsUnitTestCase {
 
 		def mu = new Eigenschaft(kuerzel: "MU", name: "Mut", quelle: Quelle.OFFIZIELL).save(failOnError: true);
 
-		assert Eigenschaft[MU] == mu
+		assert Eigenschaft[Eigenschaft.Instanz.MU] == mu
 	}
 }
