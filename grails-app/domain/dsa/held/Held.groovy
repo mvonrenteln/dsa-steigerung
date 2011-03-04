@@ -108,7 +108,7 @@ class Held {
 			talenteNachGruppen[it] = []
 		}
 		for (Talent talent in talente) {
-			talenteNachGruppen[talent.talentGruppe] << talent
+			talenteNachGruppen[talent.ref.talentGruppe] << talent
 		}
 		return talenteNachGruppen
 	}
