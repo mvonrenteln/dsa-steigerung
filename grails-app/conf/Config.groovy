@@ -72,6 +72,8 @@ grails.scaffolding.templates.domainSuffix = 'Instance'
 
 // Set to false to use the new Grails 1.2 JSONBuilder in the render method
 grails.json.legacy.builder = false
+// Use Javascript Date format in JSON for extJS
+grails.converters.json.date = 'javascript'
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
 // whether to install the java.util.logging bridge for sl4j. Disable for AppEngine!

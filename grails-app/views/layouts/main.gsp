@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><g:layoutTitle default="Grails" /></title>
+        <title><g:layoutTitle default="Heldennetz" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'main.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <link rel="stylesheet" href="http://extjs.cachefly.net/ext-3.3.1/resources/css/ext-all.css" />
+        <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.3.1/adapter/ext/ext-base-debug.js"></script>
+        <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.3.1/ext-all-debug.js"></script>
         <g:layoutHead />
         <g:javascript library="application" />
     </head>

@@ -1,5 +1,7 @@
 package dsa.held
 
+import grails.converters.JSON;
+
 
 class TalentListController {
 
@@ -8,7 +10,11 @@ class TalentListController {
 	}
 
 	def list = {
+		[talentGruppen: EnumSet.allOf(TalentGruppe)]
+	}
+
+	def listTalente = {
 		Map talente = new Held().init()?.getTalenteNachGruppen()
-		[talentList: talente, talentTotal: talente?.size()]
+		render ([talente: talente, totalCount: talente?.size()] as JSON)
 	}
 }
